@@ -7,6 +7,14 @@ import java.util.*;
 		public static void main(String[] args) {
 			Plateau p1 = new Plateau(8,5);
 			p1.afficher();
+			Plateau p2 = new Plateau(8,5);
+			p2.afficher();
+			Plateau p3 = new Plateau(8,5);
+			p3.afficher();
+			Plateau p4 = new Plateau(8,5);
+			p4.afficher();
+			Plateau p5 = new Plateau(8,5);
+			p5.afficher();
 			}
 
 		private int nbrligne;
