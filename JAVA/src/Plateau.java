@@ -46,6 +46,14 @@ import java.util.*;
 				System.out.println(" | ");
 			}
 			System.out.println();
+		}
+
+		public void afficherPossibilites(Roi roi) {
+			// TODO Auto-generated method stub
+			
+		}
+
+			
 		}	
-	}
+	
 	
