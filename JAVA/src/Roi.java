@@ -35,8 +35,6 @@ public Roi(Couleur couleur) {
 	}
 
 
-
-
 public void paintComponent(Graphics g){
 	Paint paint;
 	Graphics2D g2d;
