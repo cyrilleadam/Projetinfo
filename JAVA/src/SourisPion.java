@@ -2,13 +2,13 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class SourisPion implements MouseListener {
-	private Plateau plateau;
+	private Plateaubis plateaubis;
 	private Roi roi;
 	
 
 
-public SourisPion(Roi roi, Plateau plateau){
-	this.plateau=plateau;
+public SourisPion(Roi roi, Plateaubis plateaubis){
+	this.plateaubis=plateaubis;
 	this.roi=roi;
 }
 
@@ -29,7 +29,7 @@ public void mouseReleased(MouseEvent arg0) {
 }
 
 public void mousePressed(MouseEvent arg0) {
-	plateau.afficherPossibilites(roi);
+	plateaubis.afficherPossibilites(roi);
 }
 
 }
