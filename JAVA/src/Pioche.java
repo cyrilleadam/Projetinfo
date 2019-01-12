@@ -1,10 +1,10 @@
-import java.util.*;
+/*import java.util.*;
 public class Pioche {
 	
 	private int index = 0;
 	
 	//Melange aleatoirement les différents terrains
-	public List<Domino> dominos = new ArrayList<>(Arrays.asList(
+	/*public List<Domino> dominos = new ArrayList<>(Arrays.asList(
 			new Domino(false, 1, Terrain.Champ, 0, Terrain.Champ, 0),
 			new Domino(false, 2, Terrain.Champ, 0, Terrain.Champ, 0),
 			new Domino(false, 3, Terrain.Foret, 0, Terrain.Foret, 0),
@@ -54,6 +54,8 @@ public class Pioche {
 			new Domino(false, 47, Terrain.Mine, 0, Terrain.Montagne, 2),
 			new Domino(false, 48, Terrain.Champ, 0, Terrain.Montagne, 3)));
 	
+	
+	
 	//Contructeur
 	Pioche() {
 		Collections.shuffle(dominos);
@@ -76,4 +78,4 @@ public class Pioche {
 		return pioche;
 	}
 
-}
+}*/
