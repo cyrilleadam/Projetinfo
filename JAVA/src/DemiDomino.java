@@ -15,9 +15,9 @@ public class DemiDomino {
 	}
 
 	// Reprise de la premiere lettre terrain + nbCouronne
-	public String showDemiDomino() {
+	/*public String showDemiDomino() {
 		return typeTerrain.split("")[0] + nbrCouronne;
-	}
+	}*/
 
 	// verifier qu'on peut poser la pièce
 	public boolean[] regarderAutour(Plateau plateau, int x, int y) {
