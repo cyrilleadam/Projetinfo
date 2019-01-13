@@ -68,7 +68,7 @@ public class Jeu {
 				System.out.println(listeDeDomino.get(numeroChoisit).toString());
 				dominoMis = mettreDomino(listeDeDomino, numeroChoisit, i);
 				if(!dominoMis) {
-					System.out.println("met une position valide batard");
+					System.out.println("mettre une position valide");
 				}
 				}while(!dominoMis);
 			}

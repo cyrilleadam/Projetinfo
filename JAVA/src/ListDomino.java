@@ -60,7 +60,7 @@ public class ListDomino {
 				listeDomino.remove(domino); // retire les dominos
 
 			}
-			System.out.println(listeDomino.size());
+			
 
 		} else if (nombreDeJoueurs == 3) {
 			for (int i = 0; i < 12; i++) {
@@ -70,7 +70,7 @@ public class ListDomino {
 				listeDomino.remove(domino); // retire les dominos
 			}
 
-		}System.out.println(listeDomino.size());
+		}System.out.println("Nombre de dominos dans la pioche :" + listeDomino.size());
 		
 	}
 
