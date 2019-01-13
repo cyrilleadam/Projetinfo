@@ -1,4 +1,4 @@
-public enum Terrain {
+/*public enum Terrain {
 	//initialisation des différents terrains
 	Foret, Champ, Prairie, Mine, Montagne, Mer; 
 	public String toString() {
@@ -20,4 +20,4 @@ public enum Terrain {
 				
 		}
 	}
-}
+}*/
