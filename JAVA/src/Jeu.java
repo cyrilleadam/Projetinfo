@@ -75,14 +75,16 @@ public class Jeu {
 		}
 	}
 
-	// Afficher le plateau et stoque dans l'historique
+	// Afficher le plateau et stoquer dans l'historique
 	public boolean mettreDomino(List<Domino> listeDeDomino, int numeroChoisit, int i) {
 		List<Integer> listePosition = placerDomino();
-		Plateau plateau = ordreActuelJoueur.get(i).plateau;
+		Plateau plateau = ordreActuelJoueur.get(i).getPlateau();
+		
 		boolean[] dominoAjouter1 = listeDeDomino.get(numeroChoisit).cote1.regarderAutour(plateau, listePosition.get(0),
-				listePosition.get(1));// recup les 2 listes
+				listePosition.get(1));// recupérer les 2 listes
 		boolean[] dominoAjouter2 = listeDeDomino.get(numeroChoisit).cote2.regarderAutour(plateau, listePosition.get(2),
-				listePosition.get(3));// recup les 2 listes
+				listePosition.get(3));// recupérer les 2 listes
+		
 		if (dominoAjouter1[0] && dominoAjouter2[0] && (dominoAjouter1[1] || dominoAjouter2[1])) {	// case 1 et s=case 2 domino + case adjacente
 			plateau.placerTuile(listeDeDomino.get(numeroChoisit).cote1, listePosition.get(0), listePosition.get(1));
 			plateau.placerTuile(listeDeDomino.get(numeroChoisit).cote2, listePosition.get(2), listePosition.get(3));
@@ -139,13 +141,13 @@ public class Jeu {
 		// coordonnées du DemiDomino 2
 		coordonnee2y = coordonnee2;
 		coordonnee2x = coordonnee1;
-		if (placementO == 0) { // HAUT
+		if (placementO == 0) {         // HAUT
 			coordonnee2y = coordonnee2 - 1;
 		} else if (placementO == 1) { // BAS
 			coordonnee2y = coordonnee2 + 1;
 		} else if (placementO == 2) { // Gauche
 			coordonnee2x = coordonnee1 - 1;
-		} else { // Droite
+		} else { 					  // Droite
 			coordonnee2x = coordonnee1 + 1;
 		}
 		// récupération des données

@@ -40,13 +40,13 @@ public class ListDomino {
 		listeDomino = new ArrayList<Domino>();
 		ReadFile(FILE_PATH_DOMINO);
 		Collections.shuffle(listeDomino);
-		// afficher();
+		//afficher();
 	}
 
 	// Afficher la pile de 48 dominos
 	public void afficher() {
 		for (int i = 0; i < listeDomino.size(); i++) {
-			System.out.println(listeDomino.get(i).numero + "TEST");
+			System.out.println(listeDomino.get(i).numero);
 		}
 	}
 
@@ -55,7 +55,7 @@ public class ListDomino {
 		if (nombreDeJoueurs == 2) {
 			for (int i = 0; i < 24; i++) {
 				int hasardDomino = (int) (Math.random() * (listeDomino.size() - 1)); // Prise de position aléatoire dans
-																						// les 48 Dominos
+																						// les 24 Dominos
 				Domino domino = listeDomino.get(hasardDomino); // créer un domino aléatoire
 				listeDomino.remove(domino); // retire les dominos
 
@@ -65,7 +65,7 @@ public class ListDomino {
 		} else if (nombreDeJoueurs == 3) {
 			for (int i = 0; i < 12; i++) {
 				int hasardDomino = (int) (Math.random() * (listeDomino.size() - 1)); // Prise de position aléatoire dans
-																						// les 48 Dominos
+																						// les 36 Dominos
 				Domino domino = listeDomino.get(hasardDomino); // créer un domino aléatoire
 				listeDomino.remove(domino); // retire les dominos
 			}

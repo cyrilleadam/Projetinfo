@@ -6,6 +6,14 @@ public class Plateau {
 	private int nbrligne;
 	private int nbrcolonne;
 	private String[][] plateau;
+	public String[][] getPlateau() {
+		return plateau;
+	}
+
+	public void setPlateau(String[][] plateau) {
+		this.plateau = plateau;
+	}
+
 	public String[][] historiquePlateau;
 
 	// Constructeur
@@ -50,18 +58,4 @@ public class Plateau {
 		System.out.println();
 	}
 
-	public void placer(int l, int c, String t) {
-		l = l - 1;
-		c = c - 1;
-
-		if (l < 0 || c < 0 || l > nbrligne || c > nbrcolonne) {
-			System.out.println("Error !");
-			return;
-		}
-		if (plateau[l][c] == "-") {
-			plateau[l][c] = t;
-		} else {
-			System.out.println("zone déja prise !");
-		}
-	}
 }

@@ -15,9 +15,6 @@ public class Main {
 		// Création du plateau
 				// Plateau total
 				Plateau p1 = new Plateau(9, 9);
-				// Placement des chateaux
-				p1.placer(5, 5, "C");
-				// Afficher le plateau
 				p1.afficher();
 	}
 }
